@@ -60,14 +60,30 @@
 			children = (
 				EF3F33F0278D883500F93670 /* AppDelegate.swift */,
 				EF3F33F2278D883500F93670 /* SceneDelegate.swift */,
-				EF3F33F4278D883500F93670 /* WebViewController.swift */,
-				EF3F33F6278D883500F93670 /* Main.storyboard */,
+				EF3F3406278D8BB000F93670 /* Controller */,
+				EF3F3407278D8BB800F93670 /* View */,
 				EF3F33F9278D883700F93670 /* Assets.xcassets */,
 				EF3F33FB278D883700F93670 /* LaunchScreen.storyboard */,
 				EF3F33FE278D883700F93670 /* Info.plist */,
-				EF3F3404278D891500F93670 /* MapViewController.swift */,
 			);
 			path = MapAndWebHomework;
+			sourceTree = "<group>";
+		};
+		EF3F3406278D8BB000F93670 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EF3F33F4278D883500F93670 /* WebViewController.swift */,
+				EF3F3404278D891500F93670 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF3F3407278D8BB800F93670 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF3F33F6278D883500F93670 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
