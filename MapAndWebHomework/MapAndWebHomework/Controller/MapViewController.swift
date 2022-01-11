@@ -47,7 +47,7 @@ class MapViewController: UIViewController {
 
     func settingsAlert() {
         // Create alert message
-        let alertController = UIAlertController(title: "TITLE", message: "Please go to settings to turn on the permissons", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Homework 4", message: "Please go to settings to turn on the permissons", preferredStyle: .alert)
         // Create go to settings response and make it direct to settings
         let settingsAction = UIAlertAction(title: "Go to Settings", style: .default) { _ in
             guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }

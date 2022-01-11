@@ -91,7 +91,7 @@
                                 <rect key="frame" x="36" y="766" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Il2-lV-CwE"/>
-                                    <constraint firstAttribute="width" constant="60" id="JyW-hc-3uZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="JyW-hc-3uZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="location" catalog="system"/>
@@ -107,6 +107,7 @@
                             <constraint firstItem="bmg-Ib-XZx" firstAttribute="bottom" secondItem="fdJ-fh-eN5" secondAttribute="bottom" id="R6r-Lj-NJb"/>
                             <constraint firstItem="bmg-Ib-XZx" firstAttribute="bottom" secondItem="kct-ea-bAu" secondAttribute="bottom" constant="36" id="RWK-Ws-LdC"/>
                             <constraint firstItem="kct-ea-bAu" firstAttribute="leading" secondItem="bmg-Ib-XZx" secondAttribute="leading" constant="36" id="VTz-42-DA8"/>
+                            <constraint firstItem="bmg-Ib-XZx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kct-ea-bAu" secondAttribute="trailing" symbolic="YES" id="bGQ-fS-bLR"/>
                             <constraint firstItem="fdJ-fh-eN5" firstAttribute="leading" secondItem="bmg-Ib-XZx" secondAttribute="leading" id="u6K-gs-ywx"/>
                             <constraint firstItem="fdJ-fh-eN5" firstAttribute="top" secondItem="bmg-Ib-XZx" secondAttribute="top" id="uwr-rH-kxH"/>
                         </constraints>
@@ -155,7 +156,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-Cn-HKC">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <items>
-                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" width="82" id="JxB-by-Htc">
+                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" id="JxB-by-Htc">
                                         <connections>
                                             <action selector="backTapped:" destination="BYZ-38-t0r" id="ogX-oC-dWQ"/>
                                         </connections>
@@ -165,7 +166,7 @@
                                             <action selector="forwardTapped:" destination="BYZ-38-t0r" id="uOo-Gf-qHh"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="100" id="aWY-l8-dG5">
+                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="66" id="aWY-l8-dG5">
                                         <connections>
                                             <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="kAI-ug-y0z"/>
                                         </connections>
@@ -175,9 +176,14 @@
                                             <action selector="safariTapped:" destination="BYZ-38-t0r" id="Kkr-l0-MGq"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="HTML" image="heart.text.square" catalog="system" width="100" id="ESL-aC-1r7">
+                                    <barButtonItem title="HTML" image="heart.text.square" catalog="system" width="87" id="LDv-T1-B14">
                                         <connections>
-                                            <action selector="htmlTapped:" destination="BYZ-38-t0r" id="VEh-Kb-mwn"/>
+                                            <action selector="htmlTapped:" destination="BYZ-38-t0r" id="StL-LF-OUl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Font" image="f.cursive" catalog="system" width="87" id="ESL-aC-1r7">
+                                        <connections>
+                                            <action selector="fontTapped:" destination="BYZ-38-t0r" id="i9Y-WH-IZc"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -215,6 +221,7 @@
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <image name="f.cursive" catalog="system" width="112" height="128"/>
         <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="safari" catalog="system" width="128" height="121"/>

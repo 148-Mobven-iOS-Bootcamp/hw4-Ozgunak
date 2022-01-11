@@ -19,8 +19,23 @@ class WebViewController: UIViewController {
     }
     
     var urlString = "https://www.google.com"
-    var isSafariTapped: Bool = false
+    var isSafariTapped = false
     var ishtmlTapped = false
+    var isFontTapped = false
+    var fontFamily = "'Times New Roman', Times, serif"
+    var htmlString: String {"""
+                    <!doctype html>
+                    <meta charset="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <html><head>
+                        <style>body {font-size: 36px;font-family: \(fontFamily);text-align: center;height: 100vh;display:flex;}
+                                .container{display: grid;align-items: center;justify-content: center;width:90vw;height: 90vh;margin: auto;}
+                                .element{margin: auto;}
+                        </style>
+                        </head><body><div class="container"><div class="element">
+                                    Hello, <span class="custom">Bootcamp!</span>
+                        </body></html>
+                    """}
     
     func configureWebView() {
         guard let url = URL(string: urlString) else { return }
@@ -38,13 +53,24 @@ class WebViewController: UIViewController {
                             forKeyPath: #keyPath(WKWebView.isLoading),
                             options: .new,
                             context: nil)
+        //MARK: - Homework safari, html and font sections
+
+        // Opens current url in safari
         if isSafariTapped {
             UIApplication.shared.open(webView.url ?? url)
+            isSafariTapped = false
         }else {
             webView.load(urlRequest)
         }
+        // Opens html string
         if ishtmlTapped {
-            webView.loadHTMLString("<html><body><h1>iOS Bootcamp</h1><p>Homework 4.</p></body></html>", baseURL: nil)
+            webView.loadHTMLString(htmlString, baseURL: nil)
+        }
+        // Chances font family
+        if isFontTapped {
+            fontFamily = "AmericanTypewriter"
+            webView.loadHTMLString(htmlString, baseURL: nil)
+
         }
     }
     
@@ -57,13 +83,15 @@ class WebViewController: UIViewController {
             webView.isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         }
     }
+    
+    //MARK: - Homework toolbar buttons section
+
     @IBAction func backTapped(_ sender: UIBarButtonItem) {
         webView.goBack()
     }
     @IBAction func forwardTapped(_ sender: UIBarButtonItem) {
         webView.goForward()
     }
-    
     @IBAction func reloadButtonTapped(_ sender: UIBarButtonItem) {
         webView.reload()
     }
@@ -73,6 +101,10 @@ class WebViewController: UIViewController {
     }
     @IBAction func htmlTapped(_ sender: UIBarButtonItem) {
         ishtmlTapped = true
+        configureWebView()
+    }
+    @IBAction func fontTapped(_ sender: UIBarButtonItem) {
+        isFontTapped = true
         configureWebView()
     }
 }
