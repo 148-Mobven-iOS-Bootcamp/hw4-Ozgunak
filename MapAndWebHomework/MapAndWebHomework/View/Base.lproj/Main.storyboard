@@ -155,7 +155,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-Cn-HKC">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <items>
-                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" width="117" id="JxB-by-Htc">
+                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" width="82" id="JxB-by-Htc">
                                         <connections>
                                             <action selector="backTapped:" destination="BYZ-38-t0r" id="ogX-oC-dWQ"/>
                                         </connections>
@@ -165,14 +165,19 @@
                                             <action selector="forwardTapped:" destination="BYZ-38-t0r" id="uOo-Gf-qHh"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="135" id="ESL-aC-1r7">
+                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="100" id="aWY-l8-dG5">
                                         <connections>
-                                            <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="y44-qv-64w"/>
+                                            <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="kAI-ug-y0z"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Safari" image="safari" catalog="system" width="101" id="bUD-1o-cvx">
+                                    <barButtonItem title="Safari" image="safari" catalog="system" width="78" id="bUD-1o-cvx">
                                         <connections>
                                             <action selector="safariTapped:" destination="BYZ-38-t0r" id="Kkr-l0-MGq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="HTML" image="heart.text.square" catalog="system" width="100" id="ESL-aC-1r7">
+                                        <connections>
+                                            <action selector="htmlTapped:" destination="BYZ-38-t0r" id="VEh-Kb-mwn"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -210,6 +215,7 @@
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
+        <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

@@ -20,6 +20,7 @@ class WebViewController: UIViewController {
     
     var urlString = "https://www.google.com"
     var isSafariTapped: Bool = false
+    var ishtmlTapped = false
     
     func configureWebView() {
         guard let url = URL(string: urlString) else { return }
@@ -41,6 +42,9 @@ class WebViewController: UIViewController {
             UIApplication.shared.open(webView.url ?? url)
         }else {
             webView.load(urlRequest)
+        }
+        if ishtmlTapped {
+            webView.loadHTMLString("<html><body><h1>iOS Bootcamp</h1><p>Homework 4.</p></body></html>", baseURL: nil)
         }
     }
     
@@ -65,6 +69,10 @@ class WebViewController: UIViewController {
     }
     @IBAction func safariTapped(_ sender: UIBarButtonItem) {
         isSafariTapped = true
+        configureWebView()
+    }
+    @IBAction func htmlTapped(_ sender: UIBarButtonItem) {
+        ishtmlTapped = true
         configureWebView()
     }
 }
