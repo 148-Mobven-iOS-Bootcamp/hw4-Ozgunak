@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		EF3F33F1278D883500F93670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F33F0278D883500F93670 /* AppDelegate.swift */; };
 		EF3F33F3278D883500F93670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F33F2278D883500F93670 /* SceneDelegate.swift */; };
-		EF3F33F5278D883500F93670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F33F4278D883500F93670 /* ViewController.swift */; };
+		EF3F33F5278D883500F93670 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F33F4278D883500F93670 /* WebViewController.swift */; };
 		EF3F33F8278D883500F93670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33F6278D883500F93670 /* Main.storyboard */; };
 		EF3F33FA278D883700F93670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33F9278D883700F93670 /* Assets.xcassets */; };
 		EF3F33FD278D883700F93670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33FB278D883700F93670 /* LaunchScreen.storyboard */; };
+		EF3F3405278D891500F93670 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F3404278D891500F93670 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF3F33ED278D883500F93670 /* MapAndWebHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapAndWebHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3F33F0278D883500F93670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF3F33F2278D883500F93670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF3F33F4278D883500F93670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF3F33F4278D883500F93670 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		EF3F33F7278D883500F93670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF3F33F9278D883700F93670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF3F33FC278D883700F93670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF3F33FE278D883700F93670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3F3404278D891500F93670 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				EF3F33F0278D883500F93670 /* AppDelegate.swift */,
 				EF3F33F2278D883500F93670 /* SceneDelegate.swift */,
-				EF3F33F4278D883500F93670 /* ViewController.swift */,
+				EF3F33F4278D883500F93670 /* WebViewController.swift */,
 				EF3F33F6278D883500F93670 /* Main.storyboard */,
 				EF3F33F9278D883700F93670 /* Assets.xcassets */,
 				EF3F33FB278D883700F93670 /* LaunchScreen.storyboard */,
 				EF3F33FE278D883700F93670 /* Info.plist */,
+				EF3F3404278D891500F93670 /* MapViewController.swift */,
 			);
 			path = MapAndWebHomework;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF3F33F5278D883500F93670 /* ViewController.swift in Sources */,
+				EF3F33F5278D883500F93670 /* WebViewController.swift in Sources */,
 				EF3F33F1278D883500F93670 /* AppDelegate.swift in Sources */,
 				EF3F33F3278D883500F93670 /* SceneDelegate.swift in Sources */,
+				EF3F3405278D891500F93670 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
