@@ -14,6 +14,7 @@
 		EF3F33FA278D883700F93670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33F9278D883700F93670 /* Assets.xcassets */; };
 		EF3F33FD278D883700F93670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33FB278D883700F93670 /* LaunchScreen.storyboard */; };
 		EF3F3405278D891500F93670 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F3404278D891500F93670 /* MapViewController.swift */; };
+		EFDA18222791BF7F0083D55D /* HTMLWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDA18212791BF7F0083D55D /* HTMLWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EF3F33FC278D883700F93670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF3F33FE278D883700F93670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF3F3404278D891500F93670 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EFDA18212791BF7F0083D55D /* HTMLWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				EF3F33F4278D883500F93670 /* WebViewController.swift */,
 				EF3F3404278D891500F93670 /* MapViewController.swift */,
+				EFDA18212791BF7F0083D55D /* HTMLWebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				EF3F33F5278D883500F93670 /* WebViewController.swift in Sources */,
 				EF3F33F1278D883500F93670 /* AppDelegate.swift in Sources */,
 				EF3F33F3278D883500F93670 /* SceneDelegate.swift in Sources */,
+				EFDA18222791BF7F0083D55D /* HTMLWebViewController.swift in Sources */,
 				EF3F3405278D891500F93670 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

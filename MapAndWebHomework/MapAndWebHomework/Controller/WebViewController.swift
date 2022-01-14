@@ -65,11 +65,14 @@ class WebViewController: UIViewController {
         // Opens html string
         if ishtmlTapped {
             webView.loadHTMLString(htmlString, baseURL: nil)
+            
+            ishtmlTapped = false
         }
         // Chances font family
         if isFontTapped {
             fontFamily = "AmericanTypewriter"
             webView.loadHTMLString(htmlString, baseURL: nil)
+            fontFamily = "'Times New Roman', Times, serif"
 
         }
     }

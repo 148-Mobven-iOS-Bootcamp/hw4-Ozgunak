@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="rfh-Iy-6zO">
+                            <tableViewSection headerTitle="Section-1" id="rfh-Iy-6zO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Jy4-YZ-Nrw" style="IBUITableViewCellStyleDefault" id="VTc-UR-nxy">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -26,7 +26,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Web View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jy4-YZ-Nrw">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="URL Web View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jy4-YZ-Nrw">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -46,7 +46,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Map View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8xT-KS-N9Z">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="HTML Web View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8xT-KS-N9Z">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -56,7 +56,31 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="WJG-lV-kKY" kind="show" id="eAW-gW-zCd"/>
+                                            <segue destination="nGo-ux-lP0" kind="show" id="Ute-pu-ZjE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Section-2" id="M3U-Fj-UuQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Tzb-js-K5A" style="IBUITableViewCellStyleDefault" id="6hl-6c-DBq">
+                                        <rect key="frame" x="0.0" y="198.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6hl-6c-DBq" id="XcA-ua-UBl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Map View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tzb-js-K5A">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WJG-lV-kKY" kind="show" id="64w-Xy-TCX"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -119,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yzq-CO-HDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462.31884057971018" y="448.66071428571428"/>
+            <point key="canvasLocation" x="141" y="598"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9ee-Ad-Gfd">
@@ -214,7 +238,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436" y="-202"/>
+            <point key="canvasLocation" x="93" y="-751"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="KF9-bb-Hbv">
+            <objects>
+                <viewController id="nGo-ux-lP0" customClass="HTMLWebViewController" customModule="MapAndWebHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1pl-kw-puS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2T7-x3-tKn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-vG-pR8">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <items>
+                                    <barButtonItem title="Default" id="kt7-ZD-R2I">
+                                        <connections>
+                                            <action selector="defaultPressed:" destination="nGo-ux-lP0" id="10N-ng-Q4v"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Font 1" id="I13-vC-ttB">
+                                        <connections>
+                                            <action selector="font1Pressed:" destination="nGo-ux-lP0" id="45x-TN-dw6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Font 2" id="ZG6-Kn-KEx">
+                                        <connections>
+                                            <action selector="font2Pressed:" destination="nGo-ux-lP0" id="FzE-pF-LP0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hk8-8H-Qsl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hk8-8H-Qsl" firstAttribute="bottom" secondItem="nHf-vG-pR8" secondAttribute="bottom" id="EMN-8G-B9d"/>
+                            <constraint firstItem="nHf-vG-pR8" firstAttribute="leading" secondItem="hk8-8H-Qsl" secondAttribute="leading" id="VCz-B3-shI"/>
+                            <constraint firstItem="2T7-x3-tKn" firstAttribute="trailing" secondItem="hk8-8H-Qsl" secondAttribute="trailing" id="XHY-fq-SYJ"/>
+                            <constraint firstItem="2T7-x3-tKn" firstAttribute="leading" secondItem="hk8-8H-Qsl" secondAttribute="leading" id="ZbT-AN-byO"/>
+                            <constraint firstItem="2T7-x3-tKn" firstAttribute="top" secondItem="hk8-8H-Qsl" secondAttribute="top" id="aL2-2X-HWH"/>
+                            <constraint firstItem="nHf-vG-pR8" firstAttribute="top" secondItem="2T7-x3-tKn" secondAttribute="bottom" id="kAb-eh-I8O"/>
+                            <constraint firstItem="hk8-8H-Qsl" firstAttribute="bottom" secondItem="2T7-x3-tKn" secondAttribute="bottom" constant="50" id="pbH-Xt-ZWS"/>
+                            <constraint firstItem="nHf-vG-pR8" firstAttribute="trailing" secondItem="hk8-8H-Qsl" secondAttribute="trailing" id="scx-VD-9j7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ppc-F5-qXh"/>
+                    <connections>
+                        <outlet property="webView" destination="2T7-x3-tKn" id="2rC-IX-Ug9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5sy-ua-Das" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.8840579710145" y="-76.339285714285708"/>
         </scene>
     </scenes>
     <resources>
