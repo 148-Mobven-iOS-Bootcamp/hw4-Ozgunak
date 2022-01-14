@@ -15,6 +15,7 @@
 		EF3F33FD278D883700F93670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3F33FB278D883700F93670 /* LaunchScreen.storyboard */; };
 		EF3F3405278D891500F93670 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F3404278D891500F93670 /* MapViewController.swift */; };
 		EFDA18222791BF7F0083D55D /* HTMLWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDA18212791BF7F0083D55D /* HTMLWebViewController.swift */; };
+		EFDA1824279208C00083D55D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EFDA1823279208C00083D55D /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EF3F33FE278D883700F93670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF3F3404278D891500F93670 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EFDA18212791BF7F0083D55D /* HTMLWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLWebViewController.swift; sourceTree = "<group>"; };
+		EFDA1823279208C00083D55D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		EF3F33E4278D883500F93670 = {
 			isa = PBXGroup;
 			children = (
+				EFDA1823279208C00083D55D /* Settings.bundle */,
 				EF3F33EF278D883500F93670 /* MapAndWebHomework */,
 				EF3F33EE278D883500F93670 /* Products */,
 			);
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDA1824279208C00083D55D /* Settings.bundle in Resources */,
 				EF3F33FD278D883700F93670 /* LaunchScreen.storyboard in Resources */,
 				EF3F33FA278D883700F93670 /* Assets.xcassets in Resources */,
 				EF3F33F8278D883500F93670 /* Main.storyboard in Resources */,
