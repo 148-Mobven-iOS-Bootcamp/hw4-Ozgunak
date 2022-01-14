@@ -14,28 +14,16 @@ class WebViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         configureWebView()
     }
     
     var urlString = "https://www.google.com"
-    var isSafariTapped = false
-    var ishtmlTapped = false
-    var isFontTapped = false
-    var fontFamily = "'Times New Roman', Times, serif"
-    var htmlString: String {"""
-                    <!doctype html>
-                    <meta charset="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <html><head>
-                        <style>body {font-size: 36px;font-family: \(fontFamily);text-align: center;height: 100vh;display:flex;}
-                                .container{display: grid;align-items: center;justify-content: center;width:90vw;height: 90vh;margin: auto;}
-                                .element{margin: auto;}
-                        </style>
-                        </head><body><div class="container"><div class="element">
-                                    Hello, <span class="custom">Bootcamp!</span>
-                        </body></html>
-                    """}
+
+    //MARK: - Homework load func that opens in Safari
+
+    func loadOnSafari(with url: URL){
+        UIApplication.shared.open(url)
+    }
     
     func configureWebView() {
         guard let url = URL(string: urlString) else { return }
@@ -53,28 +41,8 @@ class WebViewController: UIViewController {
                             forKeyPath: #keyPath(WKWebView.isLoading),
                             options: .new,
                             context: nil)
-        //MARK: - Homework safari, html and font sections
-
-        // Opens current url in safari
-        if isSafariTapped {
-            UIApplication.shared.open(webView.url ?? url)
-            isSafariTapped = false
-        }else {
-            webView.load(urlRequest)
-        }
-        // Opens html string
-        if ishtmlTapped {
-            webView.loadHTMLString(htmlString, baseURL: nil)
-            
-            ishtmlTapped = false
-        }
-        // Chances font family
-        if isFontTapped {
-            fontFamily = "AmericanTypewriter"
-            webView.loadHTMLString(htmlString, baseURL: nil)
-            fontFamily = "'Times New Roman', Times, serif"
-
-        }
+        webView.load(urlRequest)
+        
     }
     
     override func observeValue(forKeyPath keyPath: String?,
@@ -98,18 +66,13 @@ class WebViewController: UIViewController {
     @IBAction func reloadButtonTapped(_ sender: UIBarButtonItem) {
         webView.reload()
     }
+    //MARK: - open in safari
+
+    // Opens current url in safari
     @IBAction func safariTapped(_ sender: UIBarButtonItem) {
-        isSafariTapped = true
-        configureWebView()
+        loadOnSafari(with: webView.url!)
     }
-    @IBAction func htmlTapped(_ sender: UIBarButtonItem) {
-        ishtmlTapped = true
-        configureWebView()
-    }
-    @IBAction func fontTapped(_ sender: UIBarButtonItem) {
-        isFontTapped = true
-        configureWebView()
-    }
+    
 }
 
 extension WebViewController: WKNavigationDelegate {

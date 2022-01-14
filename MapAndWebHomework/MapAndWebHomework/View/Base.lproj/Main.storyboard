@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="rfh-Iy-6zO">
+                            <tableViewSection headerTitle="Web Kit Odevi" id="rfh-Iy-6zO">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Jy4-YZ-Nrw" style="IBUITableViewCellStyleDefault" id="VTc-UR-nxy">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -61,7 +61,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Section-2" id="M3U-Fj-UuQ">
+                            <tableViewSection headerTitle="Map Kit ödevi" id="M3U-Fj-UuQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Tzb-js-K5A" style="IBUITableViewCellStyleDefault" id="6hl-6c-DBq">
                                         <rect key="frame" x="0.0" y="198.5" width="414" height="43.5"/>
@@ -180,17 +180,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mre-Cn-HKC">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <items>
-                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" id="JxB-by-Htc">
+                                    <barButtonItem title="Back" image="chevron.backward" catalog="system" width="127" id="JxB-by-Htc">
                                         <connections>
                                             <action selector="backTapped:" destination="BYZ-38-t0r" id="ogX-oC-dWQ"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Forward" image="chevron.forward" catalog="system" width="52" id="Dec-dw-dAR">
+                                    <barButtonItem title="Forward" image="chevron.forward" catalog="system" width="66" id="Dec-dw-dAR">
                                         <connections>
                                             <action selector="forwardTapped:" destination="BYZ-38-t0r" id="uOo-Gf-qHh"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="66" id="aWY-l8-dG5">
+                                    <barButtonItem title="Reload" image="arrow.clockwise" catalog="system" width="130" id="aWY-l8-dG5">
                                         <connections>
                                             <action selector="reloadButtonTapped:" destination="BYZ-38-t0r" id="kAI-ug-y0z"/>
                                         </connections>
@@ -198,16 +198,6 @@
                                     <barButtonItem title="Safari" image="safari" catalog="system" width="78" id="bUD-1o-cvx">
                                         <connections>
                                             <action selector="safariTapped:" destination="BYZ-38-t0r" id="Kkr-l0-MGq"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="HTML" image="heart.text.square" catalog="system" width="87" id="LDv-T1-B14">
-                                        <connections>
-                                            <action selector="htmlTapped:" destination="BYZ-38-t0r" id="StL-LF-OUl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Font" image="f.cursive" catalog="system" width="87" id="ESL-aC-1r7">
-                                        <connections>
-                                            <action selector="fontTapped:" destination="BYZ-38-t0r" id="i9Y-WH-IZc"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -230,7 +220,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mre-Cn-HKC" secondAttribute="trailing" id="xp1-8c-gNJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Kre-Io-gXw"/>
+                    <navigationItem key="navigationItem" id="Kre-Io-gXw">
+                        <barButtonItem key="rightBarButtonItem" title="HTML" id="ACZ-Xw-moC">
+                            <connections>
+                                <segue destination="nGo-ux-lP0" kind="show" id="zkG-5a-kuW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="zou-EY-JsE" id="Lpl-rd-RNE"/>
                         <outlet property="webView" destination="Otp-d4-5qc" id="xNl-1k-4Et"/>
@@ -259,17 +255,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-vG-pR8">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <items>
-                                    <barButtonItem title="Default" id="kt7-ZD-R2I">
+                                    <barButtonItem title="Default" width="133" id="kt7-ZD-R2I">
                                         <connections>
                                             <action selector="defaultPressed:" destination="nGo-ux-lP0" id="10N-ng-Q4v"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Font 1" id="I13-vC-ttB">
+                                    <barButtonItem title="Font 1" width="129" id="I13-vC-ttB">
                                         <connections>
                                             <action selector="font1Pressed:" destination="nGo-ux-lP0" id="45x-TN-dw6"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Font 2" id="ZG6-Kn-KEx">
+                                    <barButtonItem title="Font 2" width="121.5" id="ZG6-Kn-KEx">
                                         <connections>
                                             <action selector="font2Pressed:" destination="nGo-ux-lP0" id="FzE-pF-LP0"/>
                                         </connections>
@@ -297,15 +293,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sy-ua-Das" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331.8840579710145" y="-76.339285714285708"/>
+            <point key="canvasLocation" x="210" y="-40"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ute-pu-ZjE"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="chevron.forward" catalog="system" width="96" height="128"/>
-        <image name="f.cursive" catalog="system" width="112" height="128"/>
-        <image name="heart.text.square" catalog="system" width="128" height="114"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="safari" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
