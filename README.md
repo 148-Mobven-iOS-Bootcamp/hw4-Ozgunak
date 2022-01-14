@@ -1,7 +1,7 @@
 # HW4
 NOT: Web Kit ödevi için 2 ayrı ekran oluşturulmuştur. Kodlara HTMLWebViewController ve WebViewController içerisinden ulaşabilirsiniz.
 
-![Simulator Screen Recording - iPhone 11 - 2022-01-11 at 16 07 25](https://user-images.githubusercontent.com/64470656/149536129-57e7d6c6-f2a5-4af2-b1a8-7253afe59e3e.gif)
+![Simulator Screen Recording - iPhone 11 - 2022-01-14 at 17 55 41](https://user-images.githubusercontent.com/64470656/149536774-101c653f-f397-4298-9a6b-217bad26fb2a.gif)
 
 
 ## Ödev 1: 
